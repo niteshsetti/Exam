@@ -1,1 +1,132 @@
+<html>
 
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<style>
+  body {
+    background-color: #a5a5dd;
+    color: rgb(11, 11, 12);
+    font-family: "Muli", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 300 vh;
+    padding: 10px;
+    margin: 0;
+
+  }
+  #education {
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  width: 100%;
+}
+
+#education td,th {
+  border: 1px solid rgb(8, 15, 9);
+
+  padding: 8px;
+}
+
+#education tr:nth-child(even){background-color: #f2f2f2;}
+
+#education tr:hover {background-color: #ddd;}
+
+#education th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0f1b17;
+  color: rgb(231, 222, 222);
+}
+#personal{
+  background-color: #7fe905;
+    color: rgb(11, 11, 12);
+    font-family: "Muli", sans-serif;
+    display: flex;
+    align-items: left;
+justify-content:space-between;
+    height: 300 vh;
+    padding: 30px;
+    margin-bottom:10px;
+    
+}
+</style>
+
+<body ng-app="myapp">
+
+  <div ng-controller="myctrl">
+
+    <div  id="personal"> 
+      Enter Name:<input type="text" ng-model="personal.Name">
+      Enter phNum:<input type="number" ng-model="personal.phNum">
+      Enter Email:<input type="email" ng-model="personal.email">
+      Enter Dob:<input type="date" ng-model="personal.dob">
+
+
+    </div>
+    <div><table ng-model="education" id="education">
+      <tr >
+        <th>S.no</th>
+        
+        <th>Standard</th>
+        
+        <th>School or Clg name</th>
+        
+        <th>Percentage</th>
+        <th>year of study</th>
+      </tr>
+      <tr ng-repeat="student in education | orderBy:'Sno'">
+        <td >{{student.Sno}}</td>
+        <td >{{student.Standard}}</td>
+        <td >{{student.school}}</td>
+        <td >{{student.percentage}}</td>
+        <td >{{student.year}}</td>
+
+      </tr>
+    </table>
+
+
+    </div>
+
+
+  </div>
+  <script>
+    var app = angular.module("myapp", []);
+    app.controller("myctrl", function ($scope) {
+      $scope.personal = {
+        Name: "Ganesh",
+        phNum: 9615212999,
+        email: "Ganesh424@sasi.ac.in",
+        dob: new Date("01-09-2000")
+      };
+    $scope.education=[{
+      Sno:3,
+      Standard:"10th standard",
+      school:"Zilla parishat High School",
+      percentage:"95%",
+      year:"2015-2016"
+      },
+      {
+      Sno:2,
+      Standard:"12th standard",
+      school:"Aditya Junior Collge",
+      percentage:"95.9%",
+      year:"2016-2018"
+      },
+      {
+      Sno:1,
+      Standard:"Engineering",
+      school:"Sasi Institute Of Technology And Engineering",
+      percentage:"80%",
+      year:"2018-2022"
+      }
+  ]
+    })
+
+  </script>
+</body>
+
+</html>
