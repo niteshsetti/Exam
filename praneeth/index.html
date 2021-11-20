@@ -1,1 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Application Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="sa.js"></script>
+    </head>
+    <body>
+        <h1><center>Employee Application Form</center></h1><hr>
+        <div class="container">
+            <label class="Name">Name:<span>*</span></label>
+            <input class="Fname" id="jsfname" type="text">
+            <input id="jslname" type="text">
+            <label class="bdatelabel">Birth Date:<span>*</span></label>
+            <input id="jsbdate" type="date">
+            <div class="label">
+            <label class="fnamelabel">First Name</label>
+            <label class="lnamelabel">Last Name</label>
+        </div>
+        <div class="phno">
+            <label class="phnofield">Phone Number:<span>*</span></label>
+            <input class="areacode" id="jsac" type="text">
+            <input class="phoneno" id="jsph" type="text">
+            <label class="emaillabel">Email-Address:</label><input type="text">
+            
+            <div class="phlabel">
+                <label class="areacodelabel">Area Code</label>
+                <label class="phnolabel">Phone Number:</label>
+            </div>
+        </div>
+        <div class="checkboxdiv">
+            <label class="cblabel">How Were You Referred to us?<span>*</span></label>
+            <label class="addrsslabel">Address:<span>*</span></label>
+            <input id="jsaddr" type="text">
+            <div class="selectclass">
+            <select>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+            </select>
+            <select>
+                <option>AP</option>
+                <option>TS</option>
+                <option>TN</option>
+            </select>
+            <select>
+                <option>Rjy</option>
+                <option>Vij</option>
+                <option>TDD</option>
+            </select></div>
+            <div class="cbclass">
+                
+                <input name="cbvalue" onchange="aa()" type="checkbox">Walk-In</br>
+                <input name="cbvalue" onchange="aa()" type="checkbox">NewsPaper Ad</br>
+                <input name="cbvalue" onchange="aa()" type="checkbox">Twitter</br>
+                <input name="cbvalue" onchange="aa()" type="checkbox">Employee</br>
+                <input name="cbvalue" onchange="aa()" type="checkbox">Facebook</br>
+                <input name="cbvalue" onchange="aa()" type="checkbox">Craigslist</br>
+                <input name="cbvalue" onchange="aa()" type="checkbox">Other (Please Specify)<br/>
+                <span id="m"></span>
+            </div>
+        </div>
+        <div class="others">
+            <label class="otherlabel">Others:</label>
+            <input type="text">
+        </div><br/>
+        <div class="resume">
+            <label class="resumelabel">Upload Resume:</label>
+            <input type="file">
+        </div>
+        <div class="bts">
+<button onclick="submits()" class="bt">Submit</button>
+<button onclick="reset()" class="btreset">Reset</button>
 
+        </div>
+    
+    </div>
+    </body>
+</html>

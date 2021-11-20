@@ -1,0 +1,106 @@
+hr{
+    border: 3px solid;
+}
+span{
+    color: red;
+}
+.selectclass{
+    margin-top: 0.2cm;
+    margin-left: 21.8cm;
+}
+.container{
+   margin-left: 5cm;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+}
+.Name{
+    font-weight: bold;
+     margin-right: 4.8cm;
+}
+.Fname{
+    margin-right: 0.1cm;
+}
+.fnamelabel{
+    opacity: 0.6;
+    margin-left: 6.4cm;
+}
+.lnamelabel{
+    opacity: 0.6;
+    margin-left: 2.6cm;
+}
+.label{
+    margin-bottom: 1%;
+}
+.phnofield{
+    font-weight: bold;
+    margin-right: 2.1cm;
+}
+
+.areacode{
+    width: 10%;
+    margin-left: 1cm;
+}
+.areacodelabel{
+    opacity: 0.6;
+    margin-left: 6.4cm;
+}
+.phnolabel{
+    opacity: 0.6;
+    margin-left: 2.4cm;
+}
+.cblabel{
+    font-weight: bold;
+    margin-right: 0.5cm;
+}
+.phno{
+    margin-bottom: 0.5cm;
+}
+.cbclass{
+    width: 60%;
+    height: fit-content;
+    margin-left: 6.2cm;
+    margin-top: -1.3cm;
+    margin-bottom: 0.2cm;
+}
+.otherlabel{
+    font-weight: bold;
+    margin-right: 4.6cm;
+}
+.resumelabel{
+    font-weight: bold;
+    margin-top: 0.5cm;
+    margin-right: 3cm;
+}
+.bdatelabel{
+    font-weight: bold;
+    margin-left: 2cm;
+    margin-right: 1.8cm;
+}
+.emaillabel{
+    font-weight: bold;
+    margin-left: 2.2cm;
+    margin-right: 1cm;
+}
+.addrsslabel{
+    margin-left: 11cm;
+    font-weight: bold;
+    margin-right: 2.2cm;
+}
+.bts{
+    margin-top: 1cm;
+    margin-left:13cm;
+}
+.bt{
+    border: 4px solid green;
+    background-color: white;
+    width: 80px;
+    height: 30px;
+    margin-right: 1cm;
+}
+.btreset{
+    border: 4px solid orange;
+    background-color: white;
+    width: 80px;
+    height: 30px;
+}
