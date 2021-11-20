@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exam form</title>
+        <link rel="stylesheet" href="examcs.css">
+        <script src="examcode.js"></script>
+    </head>
+    <body>
+        <h3 id="cool">Employee Application Form</h3>
+        <div id="hrs"></div><br><br>
+        <label style="font-weight: bold;font-family: sans-serif;">Name:&nbsp;<span><sup> * </sup></span> &nbsp;&nbsp;</label>
+        <input type="text" id="name">&nbsp;&nbsp;
+        <input type="text" id="last">
+        <label id="bd" style="font-weight: bold;font-family: sans-serif;">Birth Date&nbsp;<span><sup> * </sup></span></label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" id="date"><span id="separate">(calender)</span><br><br>
+        <h4 id="firstname">First Name</h4>
+        <h4 id="lastname">Last Name</h4><br><br>
+        <label style="font-weight: bold;font-family: sans-serif;">Phone Number:&nbsp;&nbsp;<span><sup> * </sup></span></label>
+        <input type="text"  id="area">
+        <input type="text" id="phonenumber">
+        <label id="emove" style="font-weight: bold;font-family: sans-serif;">E-mail Address:</label>
+        <input type="email" id="mail" placeholder="ex: myname@example.com">
+        <h4 id="areacode">Area Code</h4>
+        <h4 id="Phnum">Phone Number</h4><br><br><br><br><br><br>
+        <label id="address" style="font-weight: bold;font-family: sans-serif;">Address:<span><sup>*</sup></span></label>
+        <input type="text" id="atext">
+        <select id="one">
+            <option selected hidden value="">Country</option>
+        </select>
+        <select id="two">
+            <option selected hidden value="">State</option>
+        </select>
+        <select id="three">
+            <option selected hidden value="">City</option>
+        </select>
+        <label style="font-weight: bold;font-family: sans-serif;">How were You referred to us?<span><sup> * </sup></span></label>
+        <span id="a">
+        <input type="checkbox"  name="all"><span id="arr">Walk-In</span>
+        <input type="checkbox"  name="all"><span id="arr">Employee</span></br>
+        <input type="checkbox"  name="all"><span id="arr">NewsPaper Ad</span>
+        <input type="checkbox"  name="all"><span id="arr">Facebook</span></br>
+        <input type="checkbox"  name="all"><span id="arr">Twitter</span>
+        <input type="checkbox"  name="all"><span id="arr">Craigslist</span></br>
+        <input type="checkbox"  name="all"><span id="arr">other (Please specify)</span>
+        </span><br><br><br><br><br><br>
+        <label id="others" style="font-weight: bold;font-family: sans-serif;">Others:</label>
+        <input type="text" id="textothers"><br>
+        <label style="font-weight: bold;font-family: sans-serif;">Upload Resume:</label>
+        <input type="file" id="file"><br><br><br>
+        <div id="green">
+        <button id="b1" onclick="submits()">Submit</button>
+        </div>
+        <div id="orange">
+        <button id="b2" onclick="reset()">Reset</button>
+        </div>
 
+    </body>
+</html>
