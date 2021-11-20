@@ -1,0 +1,123 @@
+#container2{
+margin-left: 800px;
+margin-top: -430px;
+height: 100%;
+}
+h3{
+  border: 3px solid grey;
+  border-collapse: collapse;
+border-top: 3px;
+margin-left: -11px;
+text-align: center;
+margin-right: -11px;
+padding-bottom: 10px;
+}
+
+
+#checkboxes{
+   margin-left: 253px;
+   margin-top: -22px;
+}
+.star{
+   color: red;
+}
+
+#fn{
+  width: 245px;
+  height: 22px;
+  margin-left: 52px;
+}
+#ln{
+  width: 245px;
+  height: 22px;
+  margin-left: 12px;
+}
+#ac{
+  width: 110px;
+  height: 22px;
+  margin-left: 150px;
+}
+input[type=tel]{
+  width:200px ;
+  height: 22px;
+  margin-left: 20px;
+}
+input[type=file]{
+  margin-left: 158px;
+}
+#other{
+  margin-left: 213px;
+  width: 500px;
+  height: 20px;
+}
+#submit{
+  width: 40x;
+  height: 25px;
+  border: 4px solid green;
+  margin-left: 260px;
+}
+#reset{
+  width: 40x;
+  height: 25px;
+  border: 4px solid red;
+  margin-left: 250x;
+}
+
+input[type=checkbox]{
+
+top: 0;
+left: 0;
+height: 17px;
+width: 17px;
+background-color: #eee;
+  box-sizing: border-box;
+  border-color: darkgray;
+}
+#ch2{
+  padding-left: 110px;
+}
+#a{
+  margin-right: 130px;
+  margin-top: -10px;
+
+}
+#b{
+  margin-top: -20px;
+  margin-left: 400px;
+  
+}
+.a1{
+  margin-bottom: 0.6cm;
+}
+.r2{
+  margin-left: 2.8cm;
+}
+.fname1{
+  opacity: 0.6;
+}
+.acode{
+  margin-left: 7cm;
+  opacity: 0.6;
+}
+.acode2{
+  margin-left: 2.2cm;
+  opacity: 0.6;
+}
+.fname2{
+  margin-left: 5.1cm;
+  opacity: 0.6;
+}
+.a2{
+  margin-left: -10.55cm;
+  margin-bottom: 1cm;
+}
+.aa2{
+  margin-right: 2.8cm;
+}
+.aa3{
+  margin-right: 3.3cm;
+}
+.aa4{
+  margin-left: 5.5cm;
+  margin-top: 0.2cm;
+}
