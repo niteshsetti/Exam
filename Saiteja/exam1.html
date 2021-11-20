@@ -1,1 +1,70 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Employee Application form</title>
+        <center><h2>Employee Application form</h2></center><hr style="margin: 30px; margin-top: -10px; border-block-color: grey;">
+        <script src="./exam1.js"></script>
+        <style>
+            #buttons{
+                position: absolute;
+                margin-left: 220px;
+            }
+            #box{
+                position: absolute;
+                margin-left: 870px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+        Name:<span style="color: red;">*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="fname" id="fname">&nbsp;&nbsp;
+        <input type="text" name="lname" id="lname">
+        <span style="margin-left: 300px;">Birth Date:</span> <span style="color: red;">*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="date" name="dob" id="dob">&nbsp;&nbsp;
+        <label style="color: chocolate;">(calender)</label><br>
+        <label style="margin-left:80px;">First Name</label>
+        <label style="margin-left:113px;">last Name</label><br><br>
+        Phone Number:<span style="color: red;">*</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="arcode" style="max-width: 60px;" id="arcode">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" name="phno" id="phno">
+        <span style="padding-left: 55px; margin-left: 275px;">E-mail Address:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="Email" placeholder="ex: myname@example.com"><br>
+        <label style="margin-left: 140px;">Area Code</label>
+        <label style="margin-left: 25px;">Phone Number</label><br>
+        <span style="margin-left: 748px;">Address:</span><span style="color: red;">*</span><input type="text" name="add" style="margin-left:58px;" id="add">
+        </div><br>
+        <span id="box">
+            <select name="country" id="co" style="width: 80px;">
+                <option hidden>Country</option>
+                <option >India</option>
+                <option >England</option>
+            </select>&nbsp;&nbsp;
+            <select name="state" id="st" style="width: 80px;">
+                <option hidden>State</option>
+                <option >Andhra Pradesh</option>
+                <option >TamilNadu</option>
+            </select>&nbsp;&nbsp;
+            <select name="City" id="ci" style="width: 80px;">
+                <option hidden>City</option>
+                <option >Hyderabad</option>
+                <option >Vijayawada</option>
+            </select>
+        </span>
+        <div>
+            How were you referred to us?<span style="color: red;">*</span>
+            <input type="checkbox" name="cbox" style="margin-left: 20px;"><span>Walk-In</span>
+            <input type="checkbox" name="cbox" style="margin-left: 60px;"><span>Employee</span><br>
+            <input type="checkbox" name="cbox" style="margin-left: 223px;"><span>Newspaper Ad</span>
+            <input type="checkbox" name="cbox" style="margin-left: 17px;"><span>Facebook</span><br>
+            <input type="checkbox" name="cbox" style="margin-left: 223px;"><span>Twitter</span>
+            <input type="checkbox" name="cbox" style="margin-left: 66px;"><span>Craigslist</span><br>
+            <input type="checkbox" name="cbox" style="margin-left: 223px;"><span>Other (please specify)</span>
+        </div><br><br>
+        Others: <input type="text" style="margin-left: 170px; width: 300px;"><br><br>
+        Upload Resume: <input type="file" style="margin-left: 110px; color: rgb(37, 35, 35);"><br><br><br>
+        <div id="buttons">
+            <input type="submit" style="border: double; border-color: green;" id="submit" onclick="validate()">
+            <input type="reset" style="border: double; border-color: orangered;" onclick="reset()">
+        </div>      
+    </body>
+</html>
