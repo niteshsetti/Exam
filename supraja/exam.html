@@ -1,1 +1,67 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+        <h2 style="text-align: center;">Employee Application Form </h2><hr size="15" color="black"><br>
+        <script src="./exam.js"></script>
+        <style>
+            #m{
+                color:red;
+            }
+        </style>
+    </head>
+    <body style="text-align: center;background-color:lightblue;">
+        <p id="pp"></p>
+        <form>
+        <div class="name"><label>Name:<span id="m">*</span>&emsp;&emsp;<input type="text" class="name" id="fname" placeholder="first name">&emsp;<input type="text" class="name" id="lname" placeholder="last name"></label></div><br><br>
+        <div id="pno"><label>Phone Number:<span id="m">*</span><input type="number" placeholder="Area Code" id="pn">&emsp;<input type="tel" placeholder="Phone Number" id="pno"></label></div><br><br>
+        <label>Birth Date<span id="m">*</span> <input type="date" id="dob"></label><br><br>
+        <label>E-mail Address :<input type="email" placeholder="ex:myname@example.com"></label><br><br>
+        <div>
+            Address<span id="m">*</span> &emsp;<input type="text" id="address"><br><br>
+            <select>
+                <option hidden>Country</option>
+                <option>India</option>
+                <option>Singapore</option>
+                <option>Japan</option>
+                <option>USA</option>
+                <option>UK</option>
+            </select>
+            <select>
+                <option hidden>State</option>
+                <option>State A</option>
+                <option>State B</option>
+                <option>State C</option>
+            </select>
+            <select>
+                <option hidden>City</option>
+                <option>City A</option>
+                <option>City B</option>
+                <option>City C</option>
+            </select>
+        </div><br><br>
+        <big>How were you referred to us?<span id="m">*</span></big><br><br>
+        <center>
+        <table >
+            <tr>
+                <td><input name="c" type="checkbox" value="walk-in" >Walk-In</td>
+                <td><input name="c" type="checkbox" value="employee">Employee</td>
+            </tr>
+            <tr>
+                <td><input name="c" type="checkbox" value="Newspaper Ad">Newspaper Ad</td>
+                <td><input name="c" type="checkbox" value="Facebook">Facebook</td>
+            </tr>
+            <tr>
+                <td><input name="c" type="checkbox" value="Twitter">Twitter</td>
+                <td><input name="c" type="checkbox" value="Craiglist">Craiglist</td>
+            </tr>
+            <tr><td><input name="c" type="checkbox" value="Other">Other(please specify)</td></tr>
+        </table></center><br>
+        Others:&emsp;<input type="text"><br><br>
+        Upload Resume:&emsp;<input type="file"><br><br><br>
+    </form>
+    <input type="submit" value="Submit" style="border-color:rgb(116, 175, 160); border-width: 10px;" onclick="check()"  id="b">&emsp;<button style="border-color:orange; border-width: 10px;" onclick="reset()">Reset</button>
+    <script>
+        document.getElementById("b").style.disabled=true;
+    </script>
+    </body>
+</html>
