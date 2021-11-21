@@ -1,132 +1,220 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <style>
-  body {
-    background-color: #a5a5dd;
-    color: rgb(11, 11, 12);
-    font-family: "Muli", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    body {
+        margin: 10;
+        background-color: rgb(250, 249, 248);position: relative;
+        
 
-    height: 300 vh;
-    padding: 10px;
-    margin: 0;
 
-  }
-  #education {
-  font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+
+    .headings {
+        text-align: center;
+        
+    }
+
+    hr {
+
+        height: 05px;
+        background-color: rgb(143, 146, 98)
+    }
+
+    .container-1 {
+        height: 300px;
+
+
+    }
+
+    .main {
+        width: 100%;
+        text-align: left;
+
+
+    }
+
+    span {
+        color: red;
+    }
+
+    #firstname {
+        margin-left: 40px;
+        margin-right: 10px;
+    }
+
+    #lastname {
+        margin-right: 240px;
+    }
+
+    #f {
+        margin-left: 90px;
+        opacity: 0.5;
+        margin-right: 110px;
+    }
+
  
-  width: 100%;
-}
+    #Area {
+        margin-left: 40px;
+        margin-right: 30px;
+        width: 10%;
 
-#education td,th {
-  border: 1px solid rgb(8, 15, 9);
+    }
 
-  padding: 8px;
-}
+    #PhNum {
 
-#education tr:nth-child(even){background-color: #f2f2f2;}
+        margin-right: 170px;
 
-#education tr:hover {background-color: #ddd;}
 
-#education th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #0f1b17;
-  color: rgb(231, 222, 222);
-}
-#personal{
-  background-color: #7fe905;
-    color: rgb(11, 11, 12);
-    font-family: "Muli", sans-serif;
-    display: flex;
-    align-items: left;
-justify-content:space-between;
-    height: 300 vh;
-    padding: 30px;
-    margin-bottom:10px;
+    }
+
+
+    #A {
+
+        margin-left: 150px;
+        margin-right: 122px;
+        opacity:0.5
+
+
+    }
+
+ 
+
+    #birth {
+        margin-right: 80px;
+    }
+
+    #email {
+        margin-left: 50px;
+    }
+    #Walk-In{
+        margin-left:220px;
+        margin-top:-15px;
+     
+    }
+    #B{
+        margin-right: 250px;
+        opacity:0.5
+        
+    }
+    #add{
+        margin-left:88px;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+    #country{
+        margin-left:850px;
     
-}
+
+       
+    }
+    #others{
+        margin-left:90px;
+    }
+  #resume{
+      margin-left:30px;
+  }
+  .button{
+      margin-left:135px;
+      margin-top:30px;
+      position:"relative";
+  }
+  #btn{
+      border:5px solid rgb(7, 209, 58);
+     
+  }
+  #rst{
+      border:5px solid rgb(240, 106, 16);
+      margin-left:10px;
+  }
 </style>
 
-<body ng-app="myapp">
-
-  <div ng-controller="myctrl">
-
-    <div  id="personal"> 
-      Enter Name:<input type="text" ng-model="personal.Name">
-      Enter phNum:<input type="number" ng-model="personal.phNum">
-      Enter Email:<input type="email" ng-model="personal.email">
-      Enter Dob:<input type="date" ng-model="personal.dob">
-
+<body>
+    <div class="headings">
+        <h4>Employee Application Form</h4>
+        <hr>
 
     </div>
-    <div><table ng-model="education" id="education">
-      <tr >
-        <th>S.no</th>
-        
-        <th>Standard</th>
-        
-        <th>School or Clg name</th>
-        
-        <th>Percentage</th>
-        <th>year of study</th>
-      </tr>
-      <tr ng-repeat="student in education | orderBy:'Sno'">
-        <td >{{student.Sno}}</td>
-        <td >{{student.Standard}}</td>
-        <td >{{student.school}}</td>
-        <td >{{student.percentage}}</td>
-        <td >{{student.year}}</td>
+    <div class="container-1">
 
-      </tr>
-    </table>
+        <div class="main">
+            Name:<span>*</span><input type="text" id="firstname" ><input type="text" id="lastname">   
+            BirthDate:<span id="birth">*</span><input type="date" id="dob"><span style="color:rgb(241, 110, 50)">(calendar)</span><br>
+            <label id="f">FirstName</label><label >LastName</label><br><br>
+            Phone Number:<span>*</span> <input type="number" id="Area"><input type="number" id="PhNum">
+            E-mail Address:<input type="email" id="email"  placeholder="Email@gmail.com"><br>
+            <label id="A">Area Code</label><label id="B">Phone Number</label>
+            Address:<span>*</span><input type="text" id="add"><br>
+                
+        <span id="country"><select>
+            <option>country</option>
+        </select>
+        <select>
+            <option>state</option>
+        </select>
+        <select>
+            <option>city</option>
+        </select>
+        </span><br>
+            How Were you referred to us? <span>*</span><br>
+         <input type="checkbox" Name="Walk-In" id="Walk-In" >Walk in</input> <br>
+            <input type="checkbox" Name="Walk-In" id="Walk-In">Employee</input> </span> <br> 
+                <input type="checkbox"Name="Walk-In"id="Walk-In" >Facebook</input><br>
+           <input type="checkbox" Name="Walk-In" id="Walk-In">Newsapaper ad</input><br>
+            <input type="checkbox" Name="Walk-In" id="Walk-In">Twitter</input><br>
+                <input type="checkbox" Name="Walk-In"id="Walk-In">craigslist</input><br>
+            <input type="checkbox" Name="Walk-In"id="Walk-In">Other(please specify)</input><br><br>
+   
+        Others:<input type="text" id="others"> </input> <br><br>
+        Upload Resume:<input type="file" id="resume" placeholder="Choose File">
+        <br>
+        <div class="button">    
+        <span>
+            <button type="submit" id="btn" onclick="validate()">Submit</button>
 
-
+            <button type="reset" id="rst" onclick="reset()">Reset</button>
+        </span>
+        </div>
     </div>
-
-
-  </div>
-  <script>
-    var app = angular.module("myapp", []);
-    app.controller("myctrl", function ($scope) {
-      $scope.personal = {
-        Name: "Ganesh",
-        phNum: 9615212999,
-        email: "Ganesh424@sasi.ac.in",
-        dob: new Date("01-09-2000")
-      };
-    $scope.education=[{
-      Sno:3,
-      Standard:"10th standard",
-      school:"Zilla parishat High School",
-      percentage:"95%",
-      year:"2015-2016"
-      },
-      {
-      Sno:2,
-      Standard:"12th standard",
-      school:"Aditya Junior Collge",
-      percentage:"95.9%",
-      year:"2016-2018"
-      },
-      {
-      Sno:1,
-      Standard:"Engineering",
-      school:"Sasi Institute Of Technology And Engineering",
-      percentage:"80%",
-      year:"2018-2022"
-      }
-  ]
-    })
-
-  </script>
+   </div>
+    </form>
+    <script>
+        function validate(){
+            var checked=[];
+        var  fname=document.getElementById("firstname").value;
+        var lname=document.getElementById("lastname").value;
+        var area=document.getElementById("Area").value;
+        var phnum=document.getElementById("PhNum").value;
+        var check=document.getElementsByName("Walk-In");
+        var a=0;
+        
+       for ( let i=0;i<check.length;i++){
+           if(check[i].checked==true){
+              
+               a++;
+           }
+        }
+       
+     
+        var dob=document.getElementById("dob").value;
+        var name=document.getElementById("add").value;
+        if(fname==" "||lname==" "||area==""||phNum==""||dob==""||name==""||a==" "){
+            window.alert("please fill all * fields");
+        }
+         
+        }
+        function reset(){
+            window.location.href="http://127.0.0.1:5500/index.html"
+        }
+    </script>
 </body>
 
 </html>
