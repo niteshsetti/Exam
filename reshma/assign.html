@@ -1,1 +1,57 @@
-
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>form</title>
+    <link rel="stylesheet" href="asgn.css">
+    <script src="asgn.js"></script>
+    </head>
+    <body>
+        
+            <center><h2>Employee Application Form</h2></center><hr>
+            <div id="main">
+            <label class="n1"><b>Name:</b><span class="str">*</span><label><input class="fname1" id="fname" type="text"><input id="lname" type="text">
+           <br>
+            <span id="fff">firstname</span><span id="lll">lastname</span><br><br>
+            <span class="phnolabel"> <b>Phone Number:</b></span><span class="str">*</span><input id="phno1" type="number"><input id="phno2" type="number">
+            <br>
+            <span id="acode">Area Code</span><span id="phno3">Phone Number</span><br><br>
+            <span class="n1"> <b>How were you reffered to us?</b><span class="str">*</span></span>
+            <input id="walk" name="ck" type="checkbox">Walk-In
+            <input id="emp" name="ck" type="checkbox">Employee<br>
+            <input class="area1" name="ck" type="checkbox">Newspapers Add
+            <input  id="fb" name="ck" type="checkbox">Facebook<br>
+            <input class="area1" name="ck" type="checkbox">Twitter
+            <input id="crg" name="ck" type="checkbox">Criagslist<br>
+            <input class="area1" name="ck" type="checkbox">Other(please specify)<br><br>
+            <span class="n1"><b>Others:</b></span><input id="other" type="text"><br><br>
+            <span class="n1"><b>Upload Resume:</b></span><input id="file" type="button" value="Choose File">No file chosen<br><br><br><br>
+            <button id="sub" onclick="namefn()">Submit</button><button id="reset" onclick="rst()">Reset</button>
+            <div id="addr">
+                <b>Birth Date</b><span class="str">*</span><input id="dob" type="date"><span>(calendar)</span><br><br><br>
+                <b>E-mail Address:</b><input id="mail" type="email"><br><br><br>
+                <span><b>Address:</b><span id="add" class="str">*</span></span>
+                <input id="adrs" type="address"><br><br>
+                </div>
+                <div id="cntr">
+                <select id="con">
+                    <option >Country</option>
+                    <option>India</option>
+                    <option>Bangladesh</option>
+                    <option>Pakistan</option>
+                </select>
+                <select id="st">
+                    <option >State</option>
+                    <option>Anurachal Pradesh</option>
+                    <option>Andhrapradesh</option>
+                    <option>telangana</option>
+                </select>
+                <select id="ct">
+                    <option >City</option>
+                    <option>Visakhapatnam</option>
+                    <option>Tadepalligudem</option>
+                    <option>Vijayawada</option>
+                </select></div>
+            </div>
+        
+    </body>
+</html>

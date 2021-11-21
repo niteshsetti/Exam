@@ -1,0 +1,108 @@
+hr{
+    height: 3px;
+    background-color:rgb(85, 84, 84);
+}
+.fname1{
+    margin-left: 2cm;
+}
+.n1{
+
+    margin-left: 2cm;
+    /* font-weight: bold; */
+}
+.phnolabel{
+    margin-left: 2cm;
+    font-weight: bold;
+}
+
+.str{
+    color: #ff0000;
+}
+#fname{
+    margin-left: 4cm;
+}
+.name{
+    margin-left: 60px;
+}
+#fname{
+    margin-left: 174px;
+}
+#fff{
+    margin-left: 8cm;
+}
+#emp,#lname{
+    margin-left: 30px;
+}
+#lll{
+    margin-left: 139px;
+}
+.area{
+    margin-left: 10%;
+}
+#acode{
+    margin-left: 305px;
+}
+#phno1{
+    margin-left:  2.9cm;
+}
+#phno2{
+    margin-left: 30px;
+}
+#phno3{
+    margin-left: 130px;
+}
+#walk{
+    margin-left: 12px;
+}
+.area1{
+    margin-left: 301px;
+    ;
+}
+#addr{
+    margin-top: 20px;
+}
+#fb{
+    margin-left: 74px;
+}
+#crg{
+    margin-left:137px ;
+}
+#emp{
+    margin-left: 132px;
+}
+#addr{
+    margin-left: 50%;
+    margin-top: -357px;
+}
+#other{
+    margin-left: 171px;
+    width: 500px; 
+}
+#file{
+    margin-left: 110px;
+}
+#sub{
+    margin-left: 400px;
+    border: 3px solid green;
+}
+#mail{
+    margin-left: 80px;
+}
+#add{
+    margin-right: 115px;
+
+}
+#cntr{
+    margin-left: 950px;
+    /* margin-top: 3px; */
+}
+#reset{
+    margin-left: 30px;
+    border: 3px solid red;
+}
+#dob{
+    margin-left: 110px;
+}
+#main{
+    margin-top: 60px;
+}
